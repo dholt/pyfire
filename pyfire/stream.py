@@ -35,6 +35,7 @@ class Stream(Thread):
         if not live:
             if live is None:
                 pause = 1
+            pause = 1
             assert pause > 0, 'A pause of at least 1 second is needed'
         elif pause is None:
             pause = 0.25
